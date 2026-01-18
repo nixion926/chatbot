@@ -1,0 +1,52 @@
+:root {
+  /* Liquid Glass Palette */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-blur: blur(12px);
+
+  --primary-color: #8b5cf6;
+  /* Violet 500 - placeholder, will blend with video */
+  --primary-hover: #7c3aed;
+  --text-color: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+
+  --sidebar-bg: rgba(0, 0, 0, 0.3);
+  --chat-bg: transparent;
+  /* Let video show through */
+  --user-msg-bg: rgba(139, 92, 246, 0.5);
+  /* Semi-transparent primary */
+  --bot-msg-bg: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+}
